@@ -3,8 +3,10 @@ img {
   max-width: min-content;
 }
 
+html,
 body {
   background-color: rgb(1, 57, 66);
+  height: 100%;
 }
 
 .project {
