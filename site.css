@@ -9,19 +9,6 @@ body {
   height: 100%;
 }
 
-.project {
-  margin: 5px;
-  padding: 5px;
-  min-height: 50px;
-  min-width: 50px;
-}
-
-.main {
-  display: flex;
-  align-content: space-between;
-  justify-content: space-evenly;
-}
-
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
