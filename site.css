@@ -1,31 +1,23 @@
-.redBorder {
-  border: 2px solid red;
-  margin: 5px;
-  padding: 5px;
+img {
+  min-width: auto;
+  max-width: min-content;
 }
 
-.span {
-  border: 2px solid whitesmoke;
-  margin: 10px;
-}
-
-.blueBorder {
-  border: 2px solid blue;
-  margin: 2px;
-  padding: 2px;
+body {
+  background-color: rgb(1, 57, 66);
 }
 
 .project {
   margin: 5px;
   padding: 5px;
-  border: 2px solid green;
   min-height: 50px;
   min-width: 50px;
 }
 
 .main {
   display: flex;
-  position: -ms-page;
+  align-content: space-between;
+  justify-content: space-evenly;
 }
 
 /* The side navigation menu */

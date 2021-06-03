@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="site.css" />
     <title>My Demo</title>
   </head>
   <body>
+    <!-- Side Navigation Bar -->
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
         >&times;</a
@@ -18,7 +25,7 @@
       <a href="#">Contact</a>
     </div>
 
-    <!-- Use any element to open the sidenav -->
+    <!-- Side Navigation Bar Hamburger -->
     <span onclick="openNav()">
       <svg viewBox="0 0 100 80" width="20" height="20">
         <rect y="0" width="100" height="20" rx="8"></rect>
@@ -26,33 +33,37 @@
         <rect y="60" width="100" height="20" rx="8"></rect>
       </svg>
     </span>
-
-    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    
     <div id="main">
-      <div class="blueBorder">
-        <h1 class="redBorder">Hello World!</h1>
-        <span class="span">A single inline item</span>
-        <main class="main">
-          <div class="project">
-            <p>TacoBell Geo-Locator Console App</p>
 
-            <button class="modal">Modal</button>
+    <!-- TacoBell Geo-Locator Modal -->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/images/TacoBell Geo-Locator/Program.png" class="d-block w-100" alt="...">
           </div>
-          <div class="project">
-            <p>BestBuy CRUD DataBase Console App</p>
-            <button class="modal">Modal</button>
+          <div class="carousel-item">
+            <img src="/images/TacoBell Geo-Locator/TacoParser.png" class="d-block w-100" alt="...">
           </div>
-          <div class="project">
-            <p>BestBuy CRUD DataBase Console App</p>
-            <button class="modal">Modal</button>
+          <div class="carousel-item">
+            <img src="/images/TacoBell Geo-Locator/LogHelper.png" class="d-block w-100" alt="...">
           </div>
-          <div class="project">
-            <p>SP.NET Core MVC BestBuy Web App</p>
-            <button class="modal">Modal</button>
-          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+          
         </main>
       </div>
     </div>
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
   </body>
 </html>
